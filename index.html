@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panipuri Paradise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            animation: bounce 0.5s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            animation: bounce 0.5s ease-in-out;
+        }
+
+        .menu-item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .about-us {
+            text-align: center;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(-20px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Panipuri Paradise</h1>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="menu">
+        <h2>Menu</h2>
+
+        <div class="menu-item">
+            <img src="istockphoto-525416827-612x612.jpg" alt="Panipuri">
+            <div>
+                <h3>Classic Panipuri</h3>
+                <p>A delightful serving of Panipuri with tangy and spicy flavors.</p>
+                <p>Price: $4.99 per plate</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="istockphoto-938102002-612x612.jpg" alt="Spicy Panipuri">
+            <div>
+                <h3>Spicy Panipuri</h3>
+                <p>For those who love an extra kick, try our Spicy Panipuri.</p>
+                <p>Price: $5.49 per plate</p>
+            </div>
+        </div>
+        <!-- Add more menu items as needed -->
+    </section>
+
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to Panipuri Paradise! We aim to provide the best Panipuri experience with our authentic flavors.</p>
+    </section>
+
+    <section id="contact" class="contact-info">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+        <p>Email: bramheshahirrao099@gmail.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Bramhesh Ahirrao. All rights reserved.</p>
+    </footer>
+</body>
+</html>
